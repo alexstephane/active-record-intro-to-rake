@@ -1,4 +1,5 @@
 require_relative "../config/environment.rb"
+require 'rake'
 
 class Student
 
@@ -50,5 +51,6 @@ class Student
     sql = "SELECT * FROM students" 
     DB[:conn].execute(sql)
   end
+
 
 end
